@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;  /* Light grey background */
+    margin: 0;
+    padding: 0;
+    color: #333;  /* Default text color */
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;  /* Center and add vertical margin */
+    padding: 20px;
+    background-color: #fff;  /* White background for container */
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+    text-align: center;  /* Center align all content */
+}
+
+.title {
+    text-align: center;  /* Center the title */
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #4a90e2;  /* Light blue color */
+}
+
+.subheading {
+    text-align: left;  /* align the subheading */
+    font-size: 20px;
+    margin: 20px 0;
+    padding: 10px 0;
+    border-top: 2px solid #4a90e2;  /* Light blue top border line */
+    border-bottom: 2px solid #4a90e2;  /* Light blue bottom border line */
+    background-color: #e6f7ff;  /* Light blue background */
+}
+
+.subheading a {
+    color: #4a90e2;  /* Light blue links */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.subheading a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    color: #333;  /* Dark grey for headings */
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #4a90e2;  /* Light blue for h2 */
+}
+
+h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;  /* Align list items to the left */
+}
+
+li {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+    background-color: #f9f9f9;  /* Light grey background for list items */
+    border-radius: 5px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+h3 a {
+    font-weight: bold;
+    color: #4a90e2;  /* Light blue for links in h3 */
+}
+
+h3 a:hover {
+    color: #003d99;  /* Darker blue on hover */
+}
+
+.content {
+    margin-top: 20px;  /* Add margin to separate content from subheading */
+    text-align: left;  /* Align content to the left */
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Notes</title>  <!-- Set the title to Sticky Notes -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Sticky Notes</h1>  <!-- Main title with class for styling -->
+        <div class="subheading">
+            <a href="{% url 'bulletin_list' %}">Bulletin Posts</a> | <!-- Link to Bulletin Posts list -->
+            <a href="{% url 'note_list' %}">Notes</a> |  <!-- Link to Notes list -->
+        </div>
+        <div class="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</body>
+</html>

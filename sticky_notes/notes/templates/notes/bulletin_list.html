@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Bulletin Posts{% endblock %}
+
+{% block content %}
+<h1>Bulletin Posts</h1>
+<a href="{% url 'bulletin_create' %}">Create new post</a>
+<ul>
+    {% for post in posts %}
+    <li>
+        <h3><a href="{% url 'bulletin_detail' post.pk %}">{{ post.title }}</a></h3>
+        <p>{{ post.content|truncatewords:20 }}</p>  <!-- Display a truncated version of the post content -->
+        <a href="{% url 'bulletin_edit' post.pk %}">Edit | </a>
+        <a href="{% url 'bulletin_delete' post.pk %}">Delete</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

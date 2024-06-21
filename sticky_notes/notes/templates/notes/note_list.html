@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Notes{% endblock %}
+
+{% block content %}
+<h1>Notes</h1>
+<a href="{% url 'note_create' %}">Create new note</a>
+<ul>
+    {% for note in notes %}
+    <li>
+        <h3><a href="{% url 'note_detail' note.pk %}">{{ note.title }}</a></h3>
+        <p>{{ note.content|truncatewords:20 }}</p>  <!-- Display a truncated version of the note content -->
+        <a href="{% url 'note_edit' note.pk %}">Edit |</a>
+        <a href="{% url 'note_delete' note.pk %}">Delete</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

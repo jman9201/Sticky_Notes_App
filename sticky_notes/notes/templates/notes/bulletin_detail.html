@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+<h1>{{ post.title }}</h1>
+<div>{{ post.content|safe }}</div>  <!-- Use the 'safe' filter to render HTML content -->
+<a class="button" href="{% url 'bulletin_edit' post.pk %}">Edit</a>
+<a class="button" href="{% url 'bulletin_delete' post.pk %}">Delete</a>
+<a href="{% url 'bulletin_list' %}">Back to list</a>
+{% endblock %}
